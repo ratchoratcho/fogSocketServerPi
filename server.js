@@ -17,6 +17,10 @@ http.listen(4000, () => {
   console.log('listening on 4000 ...');
 });
 
+app.listen(5000, () => {
+  console.log('litening on 5000 ...');
+});
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/sensingData', (req, res, next) => {
